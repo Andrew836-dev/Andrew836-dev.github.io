@@ -1,0 +1,13 @@
+h1 {
+    background-color: white;
+    color: black;
+}
+header {
+    background: orange;
+    padding: 10px;
+    margin: 10px;
+}
+body {
+    background-color: blue;
+    color: white;
+}
