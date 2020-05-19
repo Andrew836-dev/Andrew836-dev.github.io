@@ -11,3 +11,6 @@ body {
     background-color: blue;
     color: white;
 }
+.construction {
+    background-image: repeating-linear-gradient(45deg, black, black 30px, yellow 30px, yellow 60px);
+}
