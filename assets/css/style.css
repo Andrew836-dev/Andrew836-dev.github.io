@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    padding-top: 50px;
+    min-width: 640px;
+}
 header {
     position: fixed;
     top: 0;
@@ -10,6 +15,7 @@ header {
     padding: 5px;
     background-color: #dddddd;
     width: 100%;
+    min-width: inherit;
     height: 50px;
     z-index: 1;
 }
@@ -31,10 +37,33 @@ li {
 
 .background-image {
     z-index: 0;
-    position: relative;
-    top: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
     clear: both;
     height: 600px;
     width: 100%;
     background-image: radial-gradient(transparent, #999999);
+}
+
+article {
+    width: 83%;
+    min-width: 600;
+    height: 400px;
+    background-color: chartreuse;
+    float: left;
+}
+
+/* p {
+    width: 20px;
+} */
+aside {
+    float: right;
+    width: 17%;
+    background-color: blue;
+    height: 400px;
+}
+footer {
+    clear: both;
+    background-color: crimson;
 }
