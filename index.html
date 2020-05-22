@@ -5,36 +5,51 @@
         <!-- viewport for Bootstrap -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>
-            Andrew Gray Profile Page
+            Andrew Gray Bootstrap Powered Profile Page
         </title>
 
         <!-- Bootstrap 4.5.0 (https://getbootstrap.com/) -->
         <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <style>
+            /* Show it is fixed to the top and moves the first box down so it's not hidden */
+            body {
+                min-height: 75rem;
+                padding-top: 4.5rem;
+            }
+        </style>
 
-        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
     </head>
     <body>
-        <header class="fixed-top">
-            <h1>Andrew Gray</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Info</a>
-                    </li>
-                    <li>
-                        <a href="#">My work</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Details</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <!-- Fixed Navbar based on Bootstrap example -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary d-flex justify-content-center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Andrew Gray</a>
+            <div class="collapse navbar-collapse text-center" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">My projects</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        
         <div class="background-image"></div>
-        <article id="about-me">
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, autem quasi. Voluptatum sapiente pariatur dolore necessitatibus debitis recusandae minus officia beatae, consequatur in rem dolorum quo minima veritatis deserunt ratione?</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius perspiciatis adipisci iure totam asperiores autem sunt iusto, aperiam ullam at, ut voluptates saepe assumenda. Perspiciatis beatae ea minus impedit commodi!</p>
+        <div role="main" class="container">
+        <article class="container" id="about-me">
+            <section class="jumbotron">
+                <div class="">
+                <h2 class="">About me!</h2>
+                <p class="lead">I'm a former tradesman looking to move into a development career. Take a look at my projects and let me know what you think!</p>
+            </div>
             </section>
         </article>
         <aside>
@@ -42,10 +57,13 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officia expedita debitis temporibus cumque ducimus, cupiditate quia dignissimos adipisci voluptatem deleniti excepturi. Explicabo quibusdam, libero dicta ad doloremque eaque autem.</p>
             </section>
         </aside>
+    </div>
         <footer>
-            <p>Made by Andrew Gray, of Andrew Gray Productions &copy;</p>
+            <p>Made by Andrew Gray, powered by Bootstrap.</p>
         </footer>
         <!-- Bootstrap 4.5.0 (https://getbootstrap.com/) -->
-        <script src="./assets/js/bootstrap.bundle.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
 </html>
