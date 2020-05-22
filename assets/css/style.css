@@ -1,41 +1,15 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.float-right {
-    float: right;
-}
-
-.clear-fix::after {
-    clear: both;
-}
-
 body {
-    padding-top: 50px;
-    min-width: 640px;
+    background-color: lightcoral;
 }
 
 header {
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: #dddddd;
-    width: 100%;
-    min-width: inherit;
-    height: 50px;
-    z-index: 1;
 }
 h1 {
-    font-size: 48px;
     font-weight: bold;
-    display: inline;
 }
 nav {
-    margin-right: 15px;
-    float: right;
+    background-color: khaki;
 }
 
 ul {
@@ -63,25 +37,15 @@ section {
 } */
 
 article {
-    width: 83%;
-    min-width: 600;
-    height: 400px;
     background-color: chartreuse;
-    float: left;
-    overflow: auto;
 }
 
 p {
     margin: 10px;
 }
 aside {
-    float: right;
-    width: 17%;
-    height: 400px;
-    overflow: auto;
     background-color: orange;
 }
 footer {
-    clear: both;
     background-color: crimson;
 }
