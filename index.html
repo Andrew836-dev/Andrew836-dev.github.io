@@ -8,20 +8,41 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 </head>
 <body>
+    <!-- Header area -->
     <div class="container-fluid px-0 px-sm-4 px-md-4">
+
+        <!-- Makes sure all header content is evenly using center -->
         <div class="row justify-content-between">
-            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
-                <h1 class="bg-primary text-white text-center mb-0">Andrew Gray</h1>
+
+            <!-- Takes up full screenwidth at low resolution. Blue background -->
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 bg-primary">
+                
+                <!-- White text, no bottom margin, increased bottom padding -->
+                <h1 class="text-white text-center mb-0 pb-1">Andrew Gray</h1>
             </div>
-            <div class="navbar navbar-light bg-light text-center txt-sm-right col-sm-5">
-                <a href="#" class="nav-item nav-link col">Home</a>
-                <!-- <p class="mb-0 col">|</p> -->
-                <a href="#" class="nav-item nav-link col">Contact</a>
-                <!-- <p class="mb-0 col">|</p> -->
-                <a href="#" class="nav-item nav-link col">Portfolio</a>
+
+            <!-- Navbar, adds a margin to the right from the first break point -->
+
+            <div class="navbar navbar-light text-center col-sm-5 mr-sm-4">
+                <a href="#" class="nav-item nav-link px-0 col">Home</a>
+                <p class="mb-0 pl-0 col">|</p>
+                <a href="#" class="nav-item nav-link px-0 col">Contact</a>
+                <p class="mb-0 ml-1 px-0 col">|</p>
+                <a href="#" class="nav-item nav-link px-0 mr-1 col">Portfolio</a>
+            </div>                
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary p-4">
+        <div class="row justify-content-center ">
+            <div class="card col-lg-9">
+                <div class="card-body text-center text-sm-left">
+                    <h2 class="card-title">About me</h2>
+                    <img class="img-thumbnail float-sm-left" src="https://place-hold.it/200x200" />
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad est eius unde tenetur? Cumque, praesentium.</p>
+
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 </body>
 </html>
