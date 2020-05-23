@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- viewport for Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+      Andrew Gray Bootstrap Powered Profile Page
+    </title>
+
+    <!-- Bootstrap 4.5.0 (https://getbootstrap.com/) -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <style>
+      /* Show it is fixed to the top and moves the first box down so it's not hidden */
+      body {
+        padding-top: 4.5rem;
+      }
+    </style>
+
+    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+  </head>
+  <body>
+    <!-- Fixed Navbar based on Bootstrap example -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary">
+      <a class="navbar-brand bg-dark badge-pill" href="./index.html">Andrew Gray</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Actual Navbar Contents -->
+      <div class="collapse navbar-collapse text-right" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#about-me">About me <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact-me">Contact me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">My projects</a>
+                </li>
+              </ul>
+      </div>
+    </nav>
+    
+    <!-- Background image -->
+    <div class="background-image"></div>
+
+    <!-- Main part of page -->
+    <div role="main" class="container-lg">
+      <section class="card text-center">
+        <img class="card-img-top" src="./assets/img/drill.jpg" alt="A close up of a drill press and vice with metal shavings." />
+        <div class="card-body bg-secondary text-light">
+          <h2 class="card-title" id="about-me">About me!</h2>
+          <p class="card-text">I'm a former tradesman looking to move into a development career. Take a look at my projects and let me know what you think! This page was designed with as little custom css as possible.</p>
+        </div>
+      </section>
+      <section class="card text-center">
+        <div class="card-body bg-secondary text-light">
+          <h2 class="card-title" id="contact-me"></h2>
+        </div>
+      </section>
+
+      <aside>
+        <section>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, officia expedita debitis temporibus cumque ducimus, cupiditate quia dignissimos adipisci voluptatem deleniti excepturi. Explicabo quibusdam, libero dicta ad doloremque eaque autem.</p>
+        </section>
+      </aside>
+    </div>
+    <footer class="container-lg bg-secondary text-center text-light">
+      <p class=>Made by Andrew Gray, powered by Bootstrap.</p>
+    </footer>
+    <!-- Bootstrap 4.5.0 (https://getbootstrap.com/) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
