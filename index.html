@@ -15,8 +15,8 @@
         <div class="row justify-content-between">
 
             <!-- Takes up full screenwidth at low resolution. Blue background -->
-            <div class="col-12 col-sm-6 col-md-5 col-lg-4 bg-primary">
-                
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 ml-lg-4 bg-primary">
+
                 <!-- White text, no bottom margin, increased bottom padding -->
                 <h1 class="text-white text-center mb-0 pb-1">Andrew Gray</h1>
             </div>
@@ -24,25 +24,37 @@
             <!-- Navbar, adds a margin to the right from the first break point -->
 
             <div class="navbar navbar-light text-center col-sm-5 mr-sm-4">
-                <a href="#" class="nav-item nav-link px-0 col">Home</a>
+                <a href="#" class="nav-item nav-link active px-0 col">Home <span class="sr-only">(current)</span></a>
                 <p class="mb-0 pl-0 col">|</p>
-                <a href="#" class="nav-item nav-link px-0 col">Contact</a>
+                <a href="#" class="nav-item nav-link px-0 col">Portfolio</a>
                 <p class="mb-0 ml-1 px-0 col">|</p>
-                <a href="#" class="nav-item nav-link px-0 mr-1 col">Portfolio</a>
+                <a href="#" class="nav-item nav-link px-0 mr-1 col">Contact</a>
             </div>                
         </div>
     </div>
-    <div class="container-fluid bg-secondary p-4">
+    <div class="container-fluid bg-light p-4 pb-0">
         <div class="row justify-content-center ">
             <div class="card col-lg-9">
+                <div class="card-header bg-white">
+                    <h2 class="text-center text-sm-left">About me</h2>
+                </div>
                 <div class="card-body text-center text-sm-left">
-                    <h2 class="card-title">About me</h2>
-                    <img class="img-thumbnail float-sm-left" src="https://place-hold.it/200x200" />
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad est eius unde tenetur? Cumque, praesentium.</p>
-
+                    <img class="img-thumbnail float-sm-left col-sm-6 m-1 m-sm-2" src="./assets/img/drill.jpg" />
+                    <p class="card-text">I'm a former tradesman looking to move into a development career. Take a look at my projects and let me know what you think! To the best of my ability, this page was designed using only bootstrap classes.</p>
+                    <p class="card-text"></p>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <span class="col-12 bg-primary py-1"></span>
+            </div>
+            <div class="row">
+                <span class="col-12 bg-secondary text-white text-center py-4 mb-0"> Made by Andrew Gray, powered by Bootstrap</span>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
