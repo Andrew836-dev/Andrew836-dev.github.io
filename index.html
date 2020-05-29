@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Gray - About me.</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
+
 <body>
     <!-- Header area -->
-    <div class="container-fluid px-0 px-sm-4 px-md-4">
+    <div class="container-fluid px-0 px-sm-4">
 
-        <!-- Makes sure all header content is evenly using center -->
-        <div class="row justify-content-between">
+        <!-- Makes sure all header content is evenly spaced around the center at low resolutions -->
+        <div class="row justify-content-between justify-content-sm-start">
+            <!-- Spacer for alignment -->
+            <div class="col-md-1"></div>
 
             <!-- Takes up full screenwidth at low resolution. Blue background -->
-            <div class="col-12 col-sm-6 col-md-5 col-lg-4 ml-lg-4 bg-primary">
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 bg-primary">
 
                 <!-- White text, no bottom margin, increased bottom padding -->
                 <h1 class="text-white text-center mb-0 pb-1">Andrew Gray</h1>
             </div>
 
-            <!-- Navbar, adds a margin to the right from the first break point -->
+            <div class="col col-lg-3"></div>
 
-            <div class="navbar navbar-light text-center col-sm-5 mr-sm-4">
-                <a href="./index.html" class="nav-item nav-link active px-0 col">About <span class="sr-only">(current)</span></a>
-                <p class="mb-0 pl-0 col">|</p>
-                <a href="./portfolio.html" class="nav-item nav-link px-0 col">Portfolio</a>
-                <p class="mb-0 ml-1 px-0 col">|</p>
-                <a href="./contact.html" class="nav-item nav-link px-0 mr-1 col">Contact</a>
-            </div>                
+            <!-- Navbar, adds a margin to the right from the first break point -->
+            <!-- I struggled a little getting the spacing right for the pipes to divide the words neatly -->
+
+            <navbar class="navbar navbar-light text-center col-sm-5 col-md-4 col-lg-4">
+                    <a href="./index.html" class="nav-item nav-link active px-0 col">About <span
+                            class="sr-only">(current)</span></a>
+                    <p class="mb-0 pl-0 col">|</p>
+                    <a href="./portfolio.html" class="nav-item nav-link px-0 col">Portfolio</a>
+                    <p class="mb-0 ml-1 px-0 col">|</p>
+                    <a href="./contact.html" class="nav-item nav-link px-0 mr-1 col">Contact</a>
+            </navbar>
+            <!-- Spacer for alignment -->
+            <div class="col-md-1"></div>
         </div>
     </div>
+
+    <!-- Main About me section  -->
     <div class="container-fluid bg-light p-4 pb-0">
-        <div class="row justify-content-center ">
-            <div class="card col-lg-9">
+        <div class="row">
+            <!-- Spacer for alignment -->
+            <div class="col-md-1"></div>
+
+            <!-- About me content -->
+            <div class="card col-md-10 col-lg-7">
                 <div class="card-header bg-white text-center text-sm-left">
-                    <h2>About me</h2>
+                    <img src="./assets/img/headshot.jpg" alt="My profile photo" style="height: 100px; width: auto;" class="float-left ml-2">
+                    <h2 class="float-left m-4">About me</h2>
                 </div>
                 <div class="card-body text-center text-sm-left">
-                    <img class="img-thumbnail float-sm-left col-sm-6 m-1 m-sm-2" src="./assets/img/drill.jpg" alt="Very close view of a drill bit and vice" />
-                    <p class="card-text mb-2"><strong>I'm a former tradesman looking to move into a development career.</strong></p>
-                    <p class="card-text">A fitter and turner by trade, I completed my apprenticeship through the Engineering Employers Association (EEA). Metalwork has been my primary labour, however I did work with a masonry company for a short time before returning to steel.</p>
-                    <p class="card-text">I'm mildly interested in photography and am very interested in playing musical instruments, preferring bass instruments.</p>
+                    <img class="img-thumbnail float-sm-left col-sm-6 m-1 m-sm-2" src="./assets/img/drill.jpg"
+                        alt="Very close view of a drill bit and vice" />
+                    <h5 class="card-subtitle mb-2">I'm a former tradesman looking to move into a development
+                            career.</h5>
+                    <p class="card-text">A fitter and turner by trade, I completed my apprenticeship through the
+                        Engineering Employers Association (EEA). Metalwork has been my primary labour, however I did
+                        work with a masonry company for a short time before returning to steel.</p>
+                    <p class="card-text">I'm mildly interested in photography and am very interested in playing musical
+                        instruments, preferring bass instruments.</p>
                     <div class="container">
                         <div class="row justify-content-center">
                             <a class="btn btn-primary" href="./portfolio.html">Check my portfolio</a>
@@ -50,17 +72,23 @@
                     </div>
                 </div>
             </div>
+            <!-- Spacer for alignment -->
+            <div class="col-md-1 col-lg-4"></div>
         </div>
     </div>
+
+    <!-- Footer area -->
     <footer>
         <div class="container-fluid">
             <div class="row">
                 <span class="col-12 bg-primary py-1"></span>
             </div>
             <div class="row">
-                <span class="col-12 bg-secondary text-white text-center py-4 mb-0"> Made by Andrew Gray, powered by Bootstrap</span>
+                <span class="col-12 bg-secondary text-white text-center py-4 mb-0"> Made by Andrew Gray, powered by
+                    Bootstrap</span>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
