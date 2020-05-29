@@ -1,81 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Gray - Profile page.</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
+
 <body>
     <!-- Header area -->
-    <div class="container-fluid px-0 px-sm-4 px-md-4">
+    <div class="container-fluid px-0 px-sm-4">
 
-        <!-- Makes sure all header content is evenly using center -->
-        <div class="row justify-content-between">
+        <!-- Makes sure all header content is evenly spaced around the center at low resolutions -->
+        <div class="row justify-content-between justify-content-sm-start">
+            <!-- Spacer for alignment -->
+            <div class="col-md-1"></div>
 
             <!-- Takes up full screenwidth at low resolution. Blue background -->
-            <div class="col-12 col-sm-6 col-md-5 col-lg-4 ml-lg-4 bg-primary">
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4 bg-primary">
 
                 <!-- White text, no bottom margin, increased bottom padding -->
                 <h1 class="text-white text-center mb-0 pb-1">Andrew Gray</h1>
             </div>
 
-            <!-- Navbar, adds a margin to the right from the first break point -->
+            <div class="col col-lg-3"></div>
 
-            <div class="navbar navbar-light text-center col-sm-5 mr-sm-4">
-                <a href="./index.html" class="nav-item nav-link px-0 col">About</a>
+            <!-- Navbar, adds a margin to the right from the first break point -->
+            <!-- I struggled a little getting the spacing right for the pipes to divide the words neatly -->
+
+            <navbar class="navbar navbar-light text-center col-sm-5 col-md-4 col-lg-4">
+                <a href="./index.html" class="nav-item nav-link active px-0 col">About</a>
                 <p class="mb-0 pl-0 col">|</p>
-                <a href="./portfolio.html" class="nav-item nav-link active px-0 col">Portfolio <span class="sr-only">(current)</span></a>
+                <a href="./portfolio.html" class="nav-item nav-link px-0 col">Portfolio <span
+                        class="sr-only">(current)</span></a>
                 <p class="mb-0 ml-1 px-0 col">|</p>
                 <a href="./contact.html" class="nav-item nav-link px-0 mr-1 col">Contact</a>
-            </div>                
+            </navbar>
+            <!-- Spacer for alignment -->
+            <div class="col-md-1"></div>
         </div>
     </div>
-    <div class="container-fluid bg-light p-4 pb-0">
-        <div class="row justify-content-center ">
-            <div class="card col-lg-9">
-                <div class="card-header bg-white">
-                    <h2 class="text-center text-sm-left">Portfolio</h2>
+
+    <!-- Content -->
+    <div class="container-fluid bg-light p-4">
+        <div class="row">
+            <!-- Spacer for alignment -->
+            <div class="col-md-1"></div>
+
+            <!-- Portfolio content -->
+            <div class="card col-md-10 col-lg-7">
+                <div class="row">
+                    <div class="card-header bg-white col-12">
+                        <h2 class="text-center">Portfolio</h2>
+                    </div>
                 </div>
-                <div class="card-body text-center text-sm-left">
-                    <h5 class="card-subtitle text-center text-sm-left">Javascript tetris</h5>
-                    <img class="img-thumbnail float-sm-left" src="./assets/img/tetris-thumbnail.jpg" />
-                    <p class="card-text float-sm-right">Tetris game based on a FreeCodeCamp tutorial video. The tutorial used keyboard control and I've added on-screen arrows for touch screen control.</p>
-                    <div>
-                        <a href="https://andrew836-dev.github.io/Javascript-tetris/" target="_blank" class="btn btn-primary ml-sm-4">
-                            View Site
-                        </a>
-                        <a href="https://github.com/Andrew836-dev/Javascript-tetris" target="_blank" class="btn btn-primary ml-sm-4">View Repo</a>
+                <div class="row justify-content-center">
+                    <!-- <div class="card-body col-7 col-sm-6"> -->
+                        <!-- <div class="row justify-content-center">
+                            <h5 class="card-subtitle text-center mb-2">Javascript tetris</h5>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="img-thumbnail col-7 mb-2 pr-1 overflow-hidden">
+                                <img class="" src="./assets/img/tetris-thumbnail.jpg" alt="Preview of my Tetris game" />
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="row justify-content-center">
+                                    <a href="https://andrew836-dev.github.io/Javascript-tetris/" target="_blank"
+                                        class="btn btn-primary ml-sm-4">
+                                        Live Site
+                                    </a>
+                                    <a href="https://github.com/Andrew836-dev/Javascript-tetris" target="_blank"
+                                        class="btn btn-primary ml-sm-4">Repo</a>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p class="card-text text-center">
+                                        Tetris game based on a FreeCodeCamp tutorial video. The tutorial used keyboard
+                                        control and I've added on-screen arrows for touch screen control.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="card-body col-7 col-sm-6">
+                        <h5 class="card-subtitle text-center text-sm-left">Javascript Tetris</h5>
+                        <div class="img-thumbnail overflow-hidden">
+                            <img class="" src="./assets/img/tetris-thumbnail.jpg"
+                                alt="Preview of my Tetris inspired game" />
+                        </div>
+                        <p class="card-text float-sm-right">Tetris game based on a FreeCodeCamp tutorial video. The tutorial used keyboard
+                            control and I've added on-screen arrows for touch screen control.</p>
+                        <div class="row justify-content-between">
+                            <a href="https://andrew836-dev.github.io/Javascript-tetris/" target="_blank"
+                                class="btn btn-primary col-5">
+                                Live Site
+                            </a>
+                            <a href="https://github.com/Andrew836-dev/Javascript-tetris" target="_blank"
+                                class="btn btn-primary col-5">Repo</a>
+                        </div>
+                    </div>
+                    <div class="card-body col-6">
+                        <h5 class="card-subtitle text-center text-sm-left">Javascript analog clock display</h5>
+                        <div class="img-thumbnail overflow-hidden">
+                            <img class="" src="./assets/img/clock-thumbnail.jpg"
+                                alt="Preview of a digital representation of an analog clock" />
+                        </div>
+                        <p class="card-text float-sm-right">Project to practice using Javascript intervals, Date() and
+                            style
+                            changes.</p>
+                        <div class="row justify-content-between">
+                            <a href="https://andrew836-dev.github.io/JS-CSS-Analog-Clock/" target="_blank"
+                                class="btn btn-primary col-5">
+                                Live Site
+                            </a>
+                            <a href="https://github.com/Andrew836-dev/JS-CSS-Analog-Clock/" target="_blank"
+                                class="btn btn-primary col-5">Repo</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center ">
-            <div class="card col-lg-9">
-                <div class="card-body text-center text-sm-left">
-                    <h5 class="card-subtitle text-center text-sm-left">Javascript analog clock display</h5>
-                    <img class="img-thumbnail float-sm-left" src="./assets/img/clock-thumbnail.jpg" />
-                    <p class="card-text float-sm-right">Project to practice using Javascript intervals, Date() and style changes.</p>
-                    <div>
-                        <a href="https://andrew836-dev.github.io/JS-CSS-Analog-Clock/" target="_blank" class="btn btn-primary ml-sm-4">
-                            View Site
-                        </a>
-                        <a href="https://github.com/Andrew836-dev/JS-CSS-Analog-Clock/" target="_blank" class="btn btn-primary ml-sm-4">View Repo</a>
-                    </div>
-                </div>
-            </div>
+            <!-- Spacer for alignment -->
+            <div class="col-md-1 col-lg-4"></div>
         </div>
     </div>
+
+    <!-- Footer area -->
     <footer>
         <div class="container-fluid">
             <div class="row">
                 <span class="col-12 bg-primary py-1"></span>
             </div>
             <div class="row">
-                <span class="col-12 bg-secondary text-white text-center py-4 mb-0"> Made by Andrew Gray, powered by Bootstrap</span>
+                <span class="col-12 bg-secondary text-white text-center py-4 mb-0"> Made by Andrew Gray, powered by
+                    Bootstrap</span>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
