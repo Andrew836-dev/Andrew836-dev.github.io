@@ -2,7 +2,13 @@
     height: 200px;
     width: auto;
 }
+
 .portfolio-text {
+    height: 100px;
+    width: auto;
+}
+
+.headshot {
     height: 100px;
     width: auto;
 }
