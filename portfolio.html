@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body onload="setupPage()">
     <!-- Header area -->
     <div class="container-fluid px-0 px-sm-4">
 
@@ -51,79 +51,10 @@
             <div class="col-md-1"></div>
 
             <!-- Portfolio content -->
-            <div class="card col-md-10 col-lg-7">
+            <div id="portfolio" class="card col-md-10 col-lg-7">
                 <div class="row">
                     <div class="card-header bg-white col-12">
                         <h2 class="text-center">Portfolio</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="card-body col-12 col-sm-6">
-                        <h5 class="card-subtitle text-center">Javascript Tetris</h5>
-                        <div class="img-thumbnail text-center overflow-hidden portfolio-pic">
-                            <img class="" src="./assets/img/tetris-thumbnail.jpg"
-                                alt="Preview of my Tetris inspired game" />
-                        </div>
-                        <p class="card-text portfolio-text">Tetris game based on a FreeCodeCamp tutorial video. I've
-                            added on-screen arrows for touch screen control.</p>
-                        <div class="row justify-content-between px-3">
-                            <a href="https://andrew836-dev.github.io/Javascript-tetris/" target="_blank"
-                                class="btn btn-primary col-5">
-                                Live Site
-                            </a>
-                            <a href="https://github.com/Andrew836-dev/Javascript-tetris" target="_blank"
-                                class="btn btn-primary col-5">Repo</a>
-                        </div>
-                    </div>
-                    <div class="card-body col-12 col-sm-6">
-                        <h5 class="card-subtitle text-center text-nowrap">Analog clock display</h5>
-                        <div class="img-thumbnail text-center overflow-hidden portfolio-pic">
-                            <img class="" src="./assets/img/clock-thumbnail.jpg"
-                                alt="Preview of a digital representation of an analog clock" />
-                        </div>
-                        <p class="card-text portfolio-text">Project to practice using Javascript intervals, Date() and
-                            style
-                            changes.</p>
-                        <div class="row justify-content-between px-3">
-                            <a href="https://andrew836-dev.github.io/JS-CSS-Analog-Clock/" target="_blank"
-                                class="btn btn-primary col-5">
-                                Live Site
-                            </a>
-                            <a href="https://github.com/Andrew836-dev/JS-CSS-Analog-Clock/" target="_blank"
-                                class="btn btn-primary col-5">Repo</a>
-                        </div>
-                    </div>
-                    <div class="card-body col-12 col-sm-6">
-                        <h5 class="card-subtitle text-center text-nowrap">Javascript Quiz</h5>
-                        <div class="img-thumbnail text-center overflow-hidden portfolio-pic">
-                            <img class="" src="./assets/img/quiz-thumbnail.png"
-                                alt="Preview of a quiz game" />
-                        </div>
-                        <p class="card-text portfolio-text">A quiz about Javascript written in Javascript</p>
-                        <div class="row justify-content-between px-3">
-                            <a href="https://andrew836-dev.github.io/quiz-game/" target="_blank"
-                                class="btn btn-primary col-5">
-                                Live Site
-                            </a>
-                            <a href="https://github.com/Andrew836-dev/quiz-game/" target="_blank"
-                                class="btn btn-primary col-5">Repo</a>
-                        </div>
-                    </div>
-                    <div class="card-body col-12 col-sm-6">
-                        <h5 class="card-subtitle text-center text-nowrap">Weather Dashboard</h5>
-                        <div class="img-thumbnail text-center overflow-hidden portfolio-pic">
-                            <img class="" src="./assets/img/weather-thumbnail.png"
-                                alt="Preview of a weather forecast" />
-                        </div>
-                        <p class="card-text portfolio-text">An app that uses API calls for weather reports</p>
-                        <div class="row justify-content-between px-3">
-                            <a href="https://andrew836-dev.github.io/weather-dashboard/" target="_blank"
-                                class="btn btn-primary col-5">
-                                Live Site
-                            </a>
-                            <a href="https://github.com/Andrew836-dev/weather-dashboard/" target="_blank"
-                                class="btn btn-primary col-5">Repo</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -145,5 +76,6 @@
         </div>
     </footer>
 </body>
+<script type="text/javascript" src="./assets/js/portfolio.js"></script>
 
 </html>
