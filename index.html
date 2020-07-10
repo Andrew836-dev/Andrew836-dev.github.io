@@ -2,94 +2,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Gray - About me.</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Gray Portfolio Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
-<body>
-    <!-- Header area -->
-    <div class="container-fluid px-0 px-sm-4">
-
-        <!-- Makes sure all header content is evenly spaced around the center at low resolutions -->
-        <div class="row justify-content-between justify-content-sm-start">
-            <!-- Spacer for alignment -->
-            <div class="col-md-1"></div>
-
-            <!-- Takes up full screenwidth at low resolution. Blue background -->
-            <div class="col-12 col-sm-6 col-md-5 col-lg-4 bg-primary">
-
-                <!-- White text, no bottom margin, increased bottom padding -->
-                <h1 class="text-white text-center mb-0 pb-1">Andrew Gray</h1>
+<body class="dark">
+    <header id="top">
+        <nav class="nav is-fixed">
+            <div class="nav-center bg-primary">
+                <a class="brand text-white" href="#top">Andrew Gray</a>
             </div>
-
-            <div class="col col-lg-3"></div>
-
-            <!-- Navbar, adds a margin to the right from the first break point -->
-            <!-- I struggled a little getting the spacing right for the pipes to divide the words neatly -->
-
-            <navbar class="navbar navbar-light text-center col-sm-5 col-md-4 col-lg-4">
-                    <a href="./index.html" class="nav-item nav-link active px-0 col">About <span
-                            class="sr-only">(current)</span></a>
-                    <p class="mb-0 pl-0 col">|</p>
-                    <a href="./portfolio.html" class="nav-item nav-link px-0 col">Portfolio</a>
-                    <p class="mb-0 ml-1 px-0 col">|</p>
-                    <a href="./contact.html" class="nav-item nav-link px-0 mr-1 col">Contact</a>
-            </navbar>
-            <!-- Spacer for alignment -->
-            <div class="col-md-1"></div>
-        </div>
-    </div>
-
-    <!-- Main About me section  -->
-    <div class="container-fluid bg-light p-4">
+            <div class="nav-center bg-primary hide-sm"></div>
+            <div class="tabs nav-center bg-dark">
+                <a class="text-light" href="#portfolio">Portfolio</a>
+                <a class="text-light" href="#about">About Me</a>
+                <a class="text-light" href="#contact">Contact</a>
+            </div>
+        </nav>
+        <img class="intro-image" src="./assets/img/drill.jpg" />
+    </header>
+    <section class="container" id="portfolio">
+        <h1 class="text-center">Portfolio</h1>
         <div class="row">
-            <!-- Spacer for alignment -->
-            <div class="col-md-1"></div>
-
-            <!-- About me content -->
-            <div class="card col-md-10 col-lg-7">
-                <div class="card-header bg-white text-center text-sm-left">
-                    <img src="./assets/img/headshot.jpg" alt="My profile photo" class="float-left ml-2 headshot">
-                    <h2 class="float-left m-4">About me</h2>
+            <div class="card col-6 col-4-md">
+                <header>
+                    <h3>Doggo App</h3>
+                </header>
+                <p class="portfolio-text">An app that uses server API calls to show information about dog breeds. Group
+                    project where I was responsible for the javascript</p>
+                <div class="portfolio-pic">
+                    <img src="https://gussell87.github.io/Doggo/assets/doggo.jpg"
+                        alt="Preview of dog breed information app" />
                 </div>
-                <div class="card-body text-center text-sm-left">
-                    <img class="img-thumbnail float-sm-left col-sm-6 m-1 m-sm-2" src="./assets/img/drill.jpg"
-                        alt="Very close view of a drill bit and vice" />
-                    <h5 class="card-subtitle mb-2">I'm a former tradesman looking to move into a development
-                            career.</h5>
-                    <p class="card-text">A fitter and turner by trade, I completed my apprenticeship through the
-                        Engineering Employers Association (EEA). Metalwork has been my primary labour, however I did
-                        work with a masonry company for a short time before returning to steel.</p>
-                    <p class="card-text">I'm mildly interested in photography and am very interested in playing musical
-                        instruments, preferring bass instruments.</p>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <a class="btn btn-primary" href="./portfolio.html">Check my portfolio</a>
+                <footer>
+                    <a class="button bg-primary text-white" href="https://gussell87.github.io/Doggo/">Live Site</a>
+                    <a class="button bg-primary text-white pull-right"
+                        href="https://github.com/gussell87/Doggo/">Repo</a>
+                </footer>
+            </div>
+            <div class="card col-6 col-4-md">
+                <header>
+                    <h3>Weather Dashboard</h3>
+                </header>
+                <p class="portfolio-text">An app that uses API calls for weather reports.</p>
+                <div class="portfolio-pic">
+                    <img src="./assets/img/weather-thumbnail.png" alt="Preview of a weather forecast" />
+                </div>
+                <footer>
+                    <a class="button bg-primary text-white"
+                        href="https://andrew836-dev.github.io/weather-dashboard/">Live Site</a>
+                    <a class="button bg-primary text-white pull-right"
+                        href="https://github.com/andrew836-dev/weather-dashboard/">Repo</a>
+                </footer>
+            </div>
+            <div class="card col-6 col-4-md">
+                <header>
+                    <h3>Javascript Tetris</h3>
+                </header>
+                <p class="portfolio-text">Tetris game based on a FreeCodeCamp tutorial video. I've added on-screen
+                    arrows for touch screen control.</p>
+                <div class="portfolio-pic">
+                    <img src="./assets/img/tetris-thumbnail.jpg" alt="Preview of my Tetris inspired game" />
+                </div>
+                <footer>
+                    <a class="button bg-primary text-white"
+                        href="https://andrew836-dev.github.io/Javascript-tetris/">Live Site</a>
+                    <a class="button bg-primary text-white pull-right"
+                        href="https://github.com/andrew836-dev/Javascript-tetris/">Repo</a>
+                </footer>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-8-md">
+                <section class="" id="about">
+                    <div class="text-center">
+                        <h1>About Me</h1>
+                        <div class="card">
+                            <header>
+                                <h4>I'm a former tradesman looking to move into a development career.</h4>
+                            </header>
+                            <p class="portfolio-text clearfix"><img src="./assets/img/headshot.jpg"
+                                    class="pull-left headshot" alt="Photo of my head">A fitter and turner by trade, I
+                                completed my apprenticeship through the
+                                Engineering Employers Association (EEA). Metalwork has been my primary labour, however I
+                                did
+                                work with a masonry company for a short time before returning to steel.</p>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
-            <!-- Spacer for alignment -->
-            <div class="col-md-1 col-lg-4"></div>
+            <div class="col-12 col-4-md">
+                <section class="" id="contact">
+                    <div class="text-center">
+                        <h1>Contact Me</h1>
+                        <div class="row is-horizontal-align">
+                            <div class="card is-full-width portfolio-text">
+                                <header>
+                                    <h4>Links</h4>
+                                </header>
+                                <ul class="text-left">
+                                    <li><a href="https://www.linkedin.com/in/andrew-gray-45310b1a3/">LinkedIn</a></li>
+                                    <li><a href="https://github.com/Andrew836-dev">Github - Andrew836-dev</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </section>
         </div>
     </div>
 
-    <!-- Footer area -->
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <span class="col-12 bg-primary py-1"></span>
-            </div>
-            <div class="row">
-                <span class="col-12 bg-secondary text-white text-center py-4 mb-0"> Made by Andrew Gray, powered by
-                    Bootstrap</span>
-            </div>
-        </div>
-    </footer>
+
 </body>
 
 </html>
