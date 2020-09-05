@@ -46,3 +46,7 @@ nav{
     width: auto;
     border-radius: 4px;
 }
+
+#githubPortfolio {
+    max-width: 100%;
+}
