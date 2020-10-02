@@ -1,7 +1,7 @@
 import React from 'react';
 //import logo from './logo.svg';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch
 } from "react-router-dom";
@@ -15,7 +15,7 @@ import NotFound from "./components/NotFound/";
 
 function App() {
   return (
-    <Router>
+    <Router hashType="noslash">
       <div>
         <Navbar />
         <div className="container">
