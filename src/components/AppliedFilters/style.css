@@ -1,0 +1,13 @@
+.remove-filter {
+  cursor: pointer;
+  color: red;
+}
+
+.filter {
+  padding: 0 0.4rem;
+  margin: 0.2rem 0.2rem 1rem;
+  background-color: khaki;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  display: inline-flex;
+}

@@ -1,44 +1,44 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import PortfolioCard from "../PortfolioCard";
-import API from "../../utils/API";
+import FilterTextField from "../FilterTextField";
+import AppliedFilters from "../AppliedFilters";
 
 function Portfolio(props) {
-  const [repos, setRepos] = useState([]);
-  const [filters, setFilters] = useState([]);
-  // const inputRef = useRef();
+  const { data, validTags } = props
 
-  useEffect(() => {
-    API.getRepos().then(response => {
-      setRepos(response)
-    }).catch(console.log);
-  });
+  const [filters, setFilters] = useState([]);
 
   function filteredRepos() {
     if (filters.length) {
-      console.log("There's a filter");
-      return repos.slice();
+      return data.filter(repo =>
+        filters.every(filter =>
+          repo.tags.includes(filter)
+        )
+      );
     } else {
-      console.log("There's no filter");
-      return repos.slice();
+      return data.slice();
     }
   }
 
-  // function handleInput() {
-  //   console.log(inputRef.current.value);
-  // }
+  function handleSubmit(value) {
+    const lowerValue = value.toLowerCase();
+    if (validTags.includes(lowerValue) && !filters.includes(lowerValue)) {
+      setFilters([...filters, lowerValue]);
+    }
+  }
 
-  // function handleSubmit(event) {
-  //   event.preventDefault();
-  //   console.log(inputRef.current.value);
-  // }
+  function handleFilterRemoval(value) {
+    setFilters(filters.filter(name => name !== value));
+  }
 
   return <div>
     <h1>Portfolio</h1>
-    {/* <form onSubmit={handleSubmit}>
-      <input name="filter" type="text" onChange={handleInput} ref={inputRef} />
-      <input className="hidden" type="submit" />
-    </form> */}
-    {(repos.length ?
+    <FilterTextField handleSubmit={handleSubmit} validTags={validTags} />
+    {(filters.length ?
+        <AppliedFilters filters={filters} handleFilterRemoval={handleFilterRemoval} />:
+        null
+    )}
+    {(data.length ?
       filteredRepos().map(repo => {
         return <PortfolioCard
           key={repo._id}
