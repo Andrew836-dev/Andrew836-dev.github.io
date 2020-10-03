@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import PortfolioCard from "../PortfolioCard";
-import FilterTextField from "../FilterTextField";
-import AppliedFilters from "../AppliedFilters";
+import FilterButtons from "../FilterButtons";
 
 function Portfolio(props) {
   const { data, validTags } = props
@@ -33,11 +32,12 @@ function Portfolio(props) {
 
   return <div>
     <h1>Portfolio</h1>
-    <FilterTextField handleSubmit={handleSubmit} validTags={validTags} />
-    {(filters.length ?
-        <AppliedFilters filters={filters} handleFilterRemoval={handleFilterRemoval} />:
-        null
-    )}
+    <p>Click the buttons to toggle filters</p>
+    <FilterButtons 
+      handleSubmit={handleSubmit} 
+      handleFilterRemoval={handleFilterRemoval} 
+      validTags={validTags} 
+      currentFilters={filters} />
     {(data.length ?
       filteredRepos().map(repo => {
         return <PortfolioCard
