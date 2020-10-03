@@ -1,0 +1,21 @@
+.repo-card {
+  max-height: 500px;
+  box-shadow: 0px 0px 4px 4px #eee;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.repo-text {
+  height: 4.5em;
+  overflow-y: auto;
+}
+.repo-image-container {
+  max-height: 250px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.repo-image {
+  max-height: 450px;
+}
