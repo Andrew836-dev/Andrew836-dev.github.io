@@ -40,3 +40,7 @@
 nav, .pageFooter{
   box-shadow: 0px 0px 4px black;
 }
+
+body {
+  background: radial-gradient(transparent, #ddd);
+}
