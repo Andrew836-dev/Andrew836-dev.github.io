@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-//import logo from './logo.svg';
 import {
   HashRouter as Router,
   Route,
@@ -12,6 +11,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Details from "./components/Details";
 import NotFound from "./components/NotFound";
+import Footer from './components/Footer';
 import API from "./utils/API";
 
 function App() {
@@ -43,6 +43,7 @@ function App() {
             <Route onEnter={() => window.location.reload()} />
           </Switch>
         </div>
+        <Footer />
       </div>
     </Router>
   );
