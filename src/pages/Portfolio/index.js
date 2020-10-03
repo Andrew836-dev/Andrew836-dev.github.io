@@ -31,7 +31,6 @@ function Portfolio(props) {
   }
 
   return <div>
-    <h1>Portfolio</h1>
     <p>Click the buttons to toggle filters</p>
     <FilterButtons 
       handleSubmit={handleSubmit} 
@@ -44,7 +43,7 @@ function Portfolio(props) {
           key={repo._id}
           repo={repo} />
       }) :
-      <div>Loading</div>
+      <div>Loading...</div>
     )}
   </div>;
 }

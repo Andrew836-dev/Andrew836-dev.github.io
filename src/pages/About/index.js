@@ -6,7 +6,6 @@ function About(props) {
     <div className="twelve columns">
       <section className="" id="about">
         <div className="text-center">
-          <h1>About Me</h1>
           <div className="eight columns">
             <header>
               <h4>A tradesman with a fondness for problem solving and programming</h4>

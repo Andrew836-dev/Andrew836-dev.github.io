@@ -3,7 +3,6 @@ import React from "react";
 function Contact(props) {
   return (
     <div>
-      <h1>Contact Me</h1>
       <div className="row is-horizontal-align">
         <div className="card is-full-width portfolio-text">
           <header>
@@ -15,6 +14,8 @@ function Contact(props) {
             <li><a href="mailto:andrew.aj.gray@gmail.com">andrew.aj.gray@gmail.com</a></li>
             <li><a href="tel:+61427778066">Mobile - 0427778066</a></li>
           </ul>
+          <a className="button" href="./files/Andrew_Gray_Resume.pdf"
+            target="_blank">View PDF Resume</a>
         </div>
       </div>
     </div>
