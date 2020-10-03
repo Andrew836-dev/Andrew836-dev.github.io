@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import PortfolioCard from "../PortfolioCard";
-import FilterButtons from "../FilterButtons";
+import PortfolioCard from "../../components/PortfolioCard";
+import FilterButtons from "../../components/FilterButtons";
 
 function Portfolio(props) {
   const { data, validTags } = props

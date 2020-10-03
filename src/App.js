@@ -6,12 +6,12 @@ import {
   Switch
 } from "react-router-dom";
 import './App.css';
-import Navbar from "./components/Navbar/";
-import About from "./components/About/";
-import Portfolio from "./components/Portfolio/";
-import Contact from "./components/Contact/";
-import Details from "./components/Details/";
-import NotFound from "./components/NotFound/";
+import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Details from "./components/Details";
+import NotFound from "./components/NotFound";
 import API from "./utils/API";
 
 function App() {
@@ -40,6 +40,7 @@ function App() {
             <Route exact path="/contact" component={Contact} />
             <Route path="/portfolio/:project" component={Details} />
             <Route component={NotFound} />
+            <Route onEnter={() => window.location.reload()} />
           </Switch>
         </div>
       </div>
