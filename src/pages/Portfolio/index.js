@@ -20,9 +20,8 @@ function Portfolio(props) {
   }
 
   function handleSubmit(value) {
-    const lowerValue = value.toLowerCase();
-    if (validTags.includes(lowerValue) && !filters.includes(lowerValue)) {
-      setFilters([...filters, lowerValue]);
+    if (validTags.includes(value) && !filters.includes(value)) {
+      setFilters([...filters, value]);
     }
   }
 
@@ -31,7 +30,7 @@ function Portfolio(props) {
   }
 
   return <div>
-    <p>Click the buttons to toggle filters</p>
+    <p>Click the buttons to toggle filters, based on my role in the project</p>
     <FilterButtons 
       handleSubmit={handleSubmit} 
       handleFilterRemoval={handleFilterRemoval} 
