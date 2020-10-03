@@ -1,11 +1,15 @@
 const Tags = {
-  FRONT_END: "front end",
-  BACK_END: "back end",
-  FULL_STACK: "full stack",
-  EXPRESS: "express",
-  HANDLEBARS: "handlebars.js",
-  NODE: "node.js",
-  JQUERY: "jquery"
+  FRONT_END: "Front end",
+  BACK_END: "Back end",
+  FULL_STACK: "Full stack",
+  EXPRESS: "Express.js",
+  HANDLEBARS: "Handlebars.js",
+  NODE: "Node.js",
+  JQUERY: "jQuery",
+  BOOTSTRAP: "Bootstrap",
+  REACT: "React",
+  MYSQL: "MySQL",
+  MONGO: "MongoDB"
 }
 
 export default Tags;
