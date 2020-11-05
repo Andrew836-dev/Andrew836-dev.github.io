@@ -16,14 +16,23 @@ const API = {
 
 const portfolioList = [
   {
+    _id: 302802752,
+    title: "AJS",
+    description: "MERN app to help with learning JavaScript and Markdown editing. Designed for bootcamp students and web development learners in general.",
+    repoURL: "https://github.com/AJS",
+    homepageURL: "https://ajs-mern.herokuapp.com",
+    image: "./img/AJS.jpg",
+    tags: [Tags.BACK_END, Tags.EXPRESS, Tags.FRONT_END, Tags.FULL_STACK, Tags.MONGO, Tags.NODE, Tags.REACT]
+  },
+  {
     _id: 294938780,
     title: "budget-tracker",
-    "description": "Budget tracking Progressive Web App. Uses MongoDB, Express, Chart.js and webpack",
+    description: "Budget tracking Progressive Web App. Uses MongoDB, Express, Chart.js and webpack",
     repoURL: "https://github.com/Andrew836-dev/budget-tracker",
     homepageURL: "https://andrew-budget.herokuapp.com",
     image: "./img/budget-tracker.jpg",
     tags: [Tags.BACK_END, Tags.EXPRESS, Tags.MONGO, Tags.NODE]
-    },
+  },
   {
     _id: 291241222,
     title: "Doggo",
@@ -50,7 +59,7 @@ const portfolioList = [
     homepageURL: "https://andrew836-dev.github.io/Javascript-tetris/",
     image: "./img/javascript-tetris.jpg",
     tags: [Tags.FRONT_END]
-    },
+  },
   {
     _id: 282750559,
     title: "note-taker",
