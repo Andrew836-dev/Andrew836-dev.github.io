@@ -19,7 +19,7 @@ const portfolioList = [
     _id: 302802752,
     title: "AJS",
     description: "MERN app to help with learning JavaScript and Markdown editing. Designed for bootcamp students and web development learners in general.",
-    repoURL: "https://github.com/AJS",
+    repoURL: "https://github.com/Andrew836-dev/AJS",
     homepageURL: "https://ajs-mern.herokuapp.com",
     image: "./img/AJS.jpg",
     tags: [Tags.BACK_END, Tags.EXPRESS, Tags.FRONT_END, Tags.FULL_STACK, Tags.MONGO, Tags.NODE, Tags.REACT]
