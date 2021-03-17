@@ -31,10 +31,10 @@ function Portfolio(props) {
 
   return <div>
     <p>Click the buttons to toggle filters, based on my role in the project</p>
-    <FilterButtons 
-      handleSubmit={handleSubmit} 
-      handleFilterRemoval={handleFilterRemoval} 
-      validTags={validTags} 
+    <FilterButtons
+      handleSubmit={handleSubmit}
+      handleFilterRemoval={handleFilterRemoval}
+      validTags={validTags}
       currentFilters={filters} />
     {(data.length ?
       filteredRepos().map(repo => {
@@ -42,9 +42,13 @@ function Portfolio(props) {
           key={repo._id}
           repo={repo} />
       }) :
-      <div>Loading...</div>
+      <Loader />
     )}
   </div>;
+}
+
+function Loader() {
+  return <p>Loading</p>
 }
 
 export default Portfolio;

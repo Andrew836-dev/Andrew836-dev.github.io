@@ -13,7 +13,7 @@ function Navbar(props) {
           <div className="nine columns">
             <ul className="nav-list">
               <li className="nav-item">
-                <NavLink to="/portfolio" className="nav-link" activeClassName="nav-active">Portfolio</NavLink>
+                <NavLink to="/portfolio" className="nav-link" activeClassName="nav-active" isActive={(match, location) => match || location.pathname === "/"}>Portfolio</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/about" className="nav-link" activeClassName="nav-active">About me</NavLink>

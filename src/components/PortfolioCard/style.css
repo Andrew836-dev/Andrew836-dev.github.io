@@ -1,9 +1,20 @@
+.button {
+  background-color: #BFC0D9 !important;
+}
+
 .repo-card {
+  background-color: #7b7c8c;
+  box-shadow: 0px 0px 4px 4px #999;
   max-height: 500px;
-  box-shadow: 0px 0px 4px 4px #eee;
   margin-bottom: 1rem;
   overflow: hidden;
   padding: 2rem;
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.repo-card:hover {
+  box-shadow: 0px 0px 4px 4px #eee;
 }
 
 .repo-text {
@@ -17,5 +28,6 @@
 }
 
 .repo-image {
+  border: 1px solid #999;
   max-height: 450px;
 }
