@@ -30,7 +30,7 @@ function Portfolio(props) {
   }
 
   return <div>
-    <p>Click the buttons to toggle filters, based on my role in the project</p>
+    <p>Showing {`${filteredRepos().length} of ${data.length}`} projects, click a filter tag to display projects where I performed that role</p>
     <FilterButtons
       handleSubmit={handleSubmit}
       handleFilterRemoval={handleFilterRemoval}

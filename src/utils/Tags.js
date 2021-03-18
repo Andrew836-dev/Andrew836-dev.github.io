@@ -8,6 +8,7 @@ const Tags = {
   JQUERY: "jQuery",
   BOOTSTRAP: "Bootstrap",
   REACT: "React",
+  REDUX: "Redux",
   MYSQL: "MySQL",
   MONGO: "MongoDB"
 }

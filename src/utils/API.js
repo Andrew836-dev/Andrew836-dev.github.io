@@ -55,7 +55,7 @@ const portfolioList = [
     _id: 266445740,
     title: "Javascript-tetris",
     repoURL: "https://github.com/Andrew836-dev/Javascript-tetris",
-    "description": "Tetris game based on a FreeCodeCamp tutorial video. I've added on-screen arrows for touch screen control.",
+    description: "Tetris game based on a FreeCodeCamp tutorial video. I've added on-screen arrows for touch screen control.",
     homepageURL: "https://andrew836-dev.github.io/Javascript-tetris/",
     image: "./img/javascript-tetris.jpg",
     tags: [Tags.FRONT_END]
@@ -63,7 +63,7 @@ const portfolioList = [
   {
     _id: 282750559,
     title: "note-taker",
-    "description": "A server app to handle writing/saving/deleting notes. My first express app.",
+    description: "A server app to handle writing/saving/deleting notes. My first express app.",
     repoURL: "https://github.com/Andrew836-dev/note-taker",
     homepageURL: "https://take-note-andrew.herokuapp.com/",
     image: "./img/note-taker.jpg",
@@ -73,7 +73,7 @@ const portfolioList = [
     _id: 288408739,
     title: "schoolgle",
     repoURL: "https://github.com/Andrew836-dev/schoolgle",
-    "description": "Schoolgle is an app to help find information about schools in your area. Uses jQuery, Materialize, Express, handlebars.js and mySQL.",
+    description: "Schoolgle is an app to help find information about schools in your area. Uses jQuery, Materialize, Express, handlebars.js and mySQL.",
     homepageURL: "https://schoolgle.herokuapp.com",
     image: "./img/schoolgle.jpg",
     tags: [Tags.BACK_END, Tags.EXPRESS, Tags.HANDLEBARS, Tags.NODE, Tags.MYSQL, Tags.FULL_STACK, Tags.FRONT_END, Tags.JQUERY]
@@ -81,7 +81,7 @@ const portfolioList = [
   {
     _id: 296858212,
     title: "user-list",
-    "description": "React page for displaying a table of users/employees",
+    description: "React page for displaying a table of users/employees",
     repoURL: "https://github.com/Andrew836-dev/user-list",
     homepageURL: "https://andrew836-dev.github.io/user-list",
     image: "./img/user-list.png",
@@ -89,12 +89,30 @@ const portfolioList = [
   },
   {
     _id: 273736455,
-    "description": "Weather information at your fingertips. Uses jQuery, Bootstrap and remote APIs",
+    description: "Weather information at your fingertips. Uses jQuery, Bootstrap and remote APIs",
     title: "weather-dashboard",
     repoURL: "https://github.com/Andrew836-dev/weather-dashboard",
     homepageURL: "https://andrew836-dev.github.io/weather-dashboard/",
     image: "./img/weather-dashboard.jpg",
     tags: [Tags.FRONT_END, Tags.JQUERY, Tags.BOOTSTRAP]
+  },
+  {
+    _id: 343118280,
+    description: "photo sharing app using expo-cli, react-native, redux, firebase.",
+    title: "react-native-photos",
+    repoURL: "https://github.com/Andrew836-dev/react-native-photos",
+    // homepageURL: "https://andrew836-dev.github.io/react-native-photos/",
+    image: "./img/react-native-photos.jpg",
+    tags: [Tags.REACT, Tags.REDUX]
+  },
+  {
+    _id: 339704522,
+    description: "Clone of minesweeper using react.",
+    title: "react-sweeper",
+    repoURL: "https://github.com/Andrew836-dev/react-sweeper",
+    homepageURL: "https://andrew836-dev.github.io/react-sweeper/",
+    image: "./img/react-sweeper.jpg",
+    tags: [Tags.FRONT_END, Tags.REACT]
   }
 ];
 

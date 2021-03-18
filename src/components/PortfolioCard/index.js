@@ -11,8 +11,8 @@ function PortfolioCard(props) {
         <img className="repo-image" src={image} alt={`${title} thumbnail`} />
       </div>
       <div>
-        <a className="button u-pull-left" href={homepageURL}>Live Site</a>
-        <a className="button u-pull-right" href={repoURL}>Repo</a>
+        {!!homepageURL && <a className="button u-pull-left" href={homepageURL} target="blank" rel="noopener noreferrer">Live Site</a>}
+        <a className="button u-pull-right" href={repoURL} target="blank" rel="noopener noreferrer">Repo</a>
       </div>
     </div>
   );
