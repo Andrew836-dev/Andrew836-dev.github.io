@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function Navbar(props) {
   return (
     <nav>
-      <div className="container">
+      <div className="container nav-container">
         <div className="row">
           <div className="three columns">
             <h3>Andrew Gray</h3>

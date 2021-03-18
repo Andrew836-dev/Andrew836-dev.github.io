@@ -8,6 +8,10 @@ nav {
   list-style: none;
 }
 
+.nav-container {
+  text-align: center;
+}
+
 .nav-link {
   text-decoration: none;
   color: black;
